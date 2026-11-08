@@ -12,9 +12,6 @@ const NavLinks = async () => {
             <div className="max-w-7xl mx-auto">
                 <ul className='flex gap-3'>
                     <Nav links={links} />
-                    <h1>
-                        san
-                    </h1>
                 </ul>
             </div>
         </div>
