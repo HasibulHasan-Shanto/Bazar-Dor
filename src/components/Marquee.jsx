@@ -28,7 +28,7 @@ const Marquee = async () => {
 
                     <Link
                         key={product.id}
-                        href={`/ product / ${ product.id } `}
+                        href={`/product/${product.id}`}
                         className='inline-block'
                     >
 
@@ -55,13 +55,12 @@ const Marquee = async () => {
 
                             {/* Price Change */}
                             <span
-                                className={`pr - 2 sm: pr - 4 flex items - center gap - 1 text - [10px] sm: text - xs md: text - sm font - bold ${
-    product.change.dir === "up"
-        ? "text-red-600"
-        : product.change.dir === "down"
-            ? "text-green-600"
-            : "text-gray-500"
-} `}
+                                className={`pr - 2 sm: pr - 4 flex items - center gap - 1 text - [10px] sm: text - xs md: text - sm font - bold ${product.change.dir === "up"
+                                    ? "text-red-600"
+                                    : product.change.dir === "down"
+                                        ? "text-green-600"
+                                        : "text-gray-500"
+                                    } `}
                             >
 
                                 {product.change.dir === "up"
